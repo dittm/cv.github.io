@@ -1,0 +1,77 @@
+.navbar-custom {
+	background-color: #393E46;
+}
+
+a {
+ color: gainsboro;
+}
+
+/* a:active {
+    color:silver;
+} */
+
+body {
+    background-color: #222831;
+    color: gainsboro;
+    font-size: 20px;
+}
+
+.card-body {
+    background-color: #222831;
+}
+
+.container {
+    padding-top: 70px;
+    text-align: justify;
+   }
+
+
+  
+  /* all.min.css | https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css */
+  
+  .fa-brands, .fab {
+    font-size: xx-large;
+    padding: 10px;
+  }
+
+dl,
+ol,
+ul {
+ margin-top:0;
+ margin-bottom:1rem;
+ text-align: left;
+}
+
+.logos {
+    margin-top: 10px;
+    margin-right: 35px;
+    margin-bottom: 165px;
+    background-color: #393E46;
+}
+
+.navbar-toggler-icon {
+    border: 1px solid gainsboro;
+   }
+   
+.skills {
+    text-align: center;
+}
+
+.fa-regular, .fa-solid {
+    font-size: xx-large;
+}
+
+.accordion-button, .accordion-button:not(.collapsed) {
+    color: gainsboro;
+    background-color: #393E46;;
+}
+
+.accordion-body {
+    padding:1rem 1.25rem;
+    color: #222831;
+   }
+
+.accordion-body > p > a {
+    color: #222831;
+}
+   

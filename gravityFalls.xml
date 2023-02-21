@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>TEI Encoding of the first episode of the TV series "Gravity Falls"</title>
+            <author>
+               <persName xml:id="cDittmann">
+                  <forename>Christina</forename>
+                  <surname>Dittmann</surname>
+               </persName>
+            </author>
+            <respStmt>
+               <resp>Full encoding</resp>
+               <persName ref="#cDittmann">
+                  <forename>Christina</forename>
+                  <surname>Dittmann</surname>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp>Correction</resp>
+               <persName>
+                  <forename>Lucija</forename>
+                  <surname>Krušić</surname>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <extent>
+            <measure type="value">
+               <num>7:42</num>
+               <unit type="time" unit="min">minutes</unit>
+            </measure>
+         </extent>
+         <publicationStmt>
+            <p>Not to be officially published.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title>Gravity Falls First Episode! | Tourist Trapped | S1 E1 | Full Episode |
+                     @disneyxd</title>
+                  <author>
+                     <persName xml:id="aHirsch">
+                        <forename>Alex</forename>
+                        <surname>Hirsch</surname>
+                     </persName>
+                  </author>
+                  <respStmt>
+                     <resp>Writer</resp>
+                     <persName ref="#aHirsch">
+                        <forename>Alex</forename>
+                        <surname>Hirsch</surname>
+                     </persName>
+                  </respStmt>
+                  <respStmt>
+                     <resp>Storyboard</resp>
+                     <persName>
+                        <forename>Matt</forename>
+                        <surname>Braley</surname>
+                     </persName>
+                     <persName>
+                        <forename>Erik</forename>
+                        <surname>Fountain</surname>
+                     </persName>
+                     <persName>
+                        <forename>Mark</forename>
+                        <surname>Garcia</surname>
+                     </persName>
+                     <persName>
+                        <forename>Alonso</forename>
+                        <surname>Ramirez</surname>
+                        <surname>Ramos</surname>
+                     </persName>
+                     <persName>
+                        <forename>Niki</forename>
+                        <surname>Yang</surname>
+                     </persName>
+                  </respStmt>
+                  <respStmt>
+                     <resp>Director</resp>
+                     <persName>
+                        <forename>John</forename>
+                        <surname>Aoshima</surname>
+                     </persName>
+                  </respStmt>
+               </titleStmt>
+               <publicationStmt>
+                  <distributor>Disney XD</distributor>
+                  <availability>
+                     <p>Freely available on Youtube.</p>
+                  </availability>
+                  <date when="2022-11-04">04.11.2022</date>
+                  <idno type="PC">618G-107</idno>
+                  <ptr target="https://www.youtube.com/watch?v=o2E2wLm_LlY"/>
+               </publicationStmt>
+               <sourceDesc>
+                  <p>Twin brother and sister <persName ref="#dipper">Dipper</persName> and <persName
+                        ref="#mabel">Mabel</persName> are in for an unexpected adventure when <rs
+                        ref="#mabel #dipper">they</rs> spend the summer with <rs
+                        ref="#mabel #dipper">their</rs>
+                     <rs ref="#stan">great uncle</rs> in the mysterious town of <placeName
+                        ref="#gravityFalls">Gravity Falls</placeName>. Upon <rs ref="#mabel #dipper"
+                        >their</rs> arrival, <persName ref="#dipper">Dipper</persName> and <persName
+                        ref="#mabel">Mabel</persName>'s <rs ref="#stan">great uncle</rs> enlists <rs
+                        ref="#mabel #dipper">them</rs> to run the <placeName ref="#mysteryShack"
+                        >Mystery Shack</placeName>, a fun tourist trap <rs ref="#stan">he</rs> owns
+                     that overcharges unsuspecting customers. Although <persName ref="#dipper"
+                        >Dipper</persName> and <persName ref="#mabel">Mabel</persName> quickly
+                     discover the <placeName ref="#mysteryShack">Mystery Shack</placeName> itself is
+                     a hoax, <rs ref="#mabel #dipper">they</rs> sense there is something strange
+                     about <rs ref="#mabel #dipper">their</rs> new <rs ref="#gravityFalls">town</rs>
+                     and together <rs ref="#mabel #dipper">they</rs> begin to unlock the secrets of
+                        <placeName ref="#gravityFalls">Gravity Falls</placeName>.</p>
+               </sourceDesc>
+            </biblFull>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>For X-Tech 1, I am creating a XML edition of a cartoon. The transcripted text is
+               based on Youtube's automated transcript function and a fan-made transcript found on
+                  <ref type="url"
+                  >https://gravityfalls.fandom.com/wiki/Tourist_Trapped/Transcript</ref>. But for
+               the most part, I used the original to get the most accurate transcription for the
+               encoding itself.</p>
+         </projectDesc>
+      </encodingDesc>
+   </teiHeader>
+   <standOff>
+      <listPerson type="human">
+         <person xml:id="dipper" age="12" role="protagonist" sex="male">
+            <persName>
+               <forename>Mason</forename>
+               <addName>Dipper</addName>
+               <surname>Pines</surname>
+            </persName>
+         </person>
+         <person xml:id="mabel" age="12" role="protagonist" sex="female">
+            <persName>
+               <forename>Mabel</forename>
+               <surname>Pines</surname>
+            </persName>
+         </person>
+         <person xml:id="hank" role="villager" sex="male">
+            <persName>
+               <forename>Hank</forename>
+            </persName>
+         </person>
+         <person xml:id="hankWife" role="villager" sex="female">
+            <persName>
+               <forename>Hank's wife</forename>
+            </persName>
+         </person>
+         <person xml:id="shmipper" role="villager" sex="male">
+            <persName>
+               <forename>Shmipper</forename>
+            </persName>
+         </person>
+         <person xml:id="smabble" role="villager" sex="female">
+            <persName>
+               <forename>Smabble</forename>
+            </persName>
+         </person>
+         <person xml:id="stan" role="villager" sex="male">
+            <persName>
+               <forename>Stanley</forename>
+               <addName>Stan</addName>
+               <addName>Grunkle Stan</addName>
+               <surname>Pines</surname>
+            </persName>
+         </person>
+         <person xml:id="soos" role="villager" age="21" sex="male">
+            <persName>
+               <forename>Jesus</forename>
+               <addName>Soos</addName>
+               <forename>Alzamirano</forename>
+               <surname>Ramirez</surname>
+            </persName>
+         </person>
+         <person xml:id="mattressKing" role="villager" sex="male">
+            <persName>Mattress King</persName>
+         </person>
+         <person xml:id="wendy" role="villager" age="15" sex="female">
+            <persName>
+               <forename>Wendy</forename>
+               <surname>Corduroy</surname>
+            </persName>
+         </person>
+         <person xml:id="boyGreetingCard" role="mabelsCrush" sex="male">
+            <persName>Boy near a greeting cards display</persName>
+         </person>
+         <person xml:id="boyTurtleBench" role="mabelsCrush" sex="male">
+            <persName>Boy holding a turtle on a bench</persName>
+         </person>
+         <listRelation>
+            <relation name="sibling" mutual="#dipper #mabel"/>
+            <relation name="spouse" mutual="#hank #hankWife"/>
+            <relation name="parent" active="#hank #hankWife" passive="#shmipper #smabble"/>
+            <relation name="great-uncle" active="#stan" passive="#dipper #mabel"/>
+         </listRelation>
+      </listPerson>
+      <listPerson>
+         <personGrp xml:id="parents"/>
+         <person xml:id="mrPines" role="parent" sex="male">
+            <persName>
+               <roleName>Mr</roleName>
+               <surname>Pines</surname>
+            </persName>
+         </person>
+         <person xml:id="mrsPines" role="parent" sex="female">
+            <persName>
+               <roleName>Mrs</roleName>
+               <surname>Pines</surname>
+            </persName>
+         </person>
+         <listRelation>
+            <relation name="parent" active="#mrPines #mrsPines" passive="#dipper #mabel"/>
+         </listRelation>
+      </listPerson>
+      <listPerson type="nonHuman">
+         <person xml:id="monster" role="monster">
+            <persName>Monster</persName>
+         </person>
+         <person xml:id="gompers" role="goat">
+            <persName>Gompers</persName>
+         </person>
+         <personGrp xml:id="norman" role="gnome">
+            <persName>Jeff</persName>
+            <persName>Carson</persName>
+            <persName>Steve</persName>
+            <persName>Jason</persName>
+            <persName>Shmebulock</persName>
+         </personGrp>
+      </listPerson>
+      <listPlace>
+         <place xml:id="gravityFalls">
+            <settlement>Gravity Falls</settlement>
+            <region>Oregon</region>
+         </place>
+         <place xml:id="oregon">
+            <region>Oregon</region>
+         </place>
+         <place xml:id="home">
+            <placeName>living room at home</placeName>
+            <location>
+               <region>California</region>
+            </location>
+         </place>
+         <place xml:id="mysteryShack">
+            <placeName>Mystery Shack</placeName>
+            <location>
+               <settlement ref="#gravityFalls">Gravity Falls</settlement>
+               <region ref="#oregon">Oregon</region>
+            </location>
+         </place>
+         <place xml:id="attic">
+            <placeName>attic</placeName>
+            <location>
+               <placeName ref="#mysteryShack">The Mystery Shack</placeName>
+            </location>
+         </place>
+         <place xml:id="livingRoom">
+            <placeName>living room</placeName>
+            <location>
+               <placeName ref="#mysteryShack">The Mystery Shack</placeName>
+            </location>
+         </place>
+         <place xml:id="mattressStore">
+            <placeName>mattress store</placeName>
+            <location>
+               <settlement ref="#gravityFalls">Gravity Falls</settlement>
+               <region ref="#oregon">Oregon</region>
+            </location>
+         </place>
+      </listPlace>
+   </standOff>
+   <text>
+      <body>
+         <div type="episode" n="1">
+            <view>The episode opens with a <camera type="opener">shot</camera> of the sun. <persName
+                  ref="#dipper">Dipper</persName> starts to narrate.</view>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <stage type="delivery">(Narrating:)</stage>
+               <p>Ah, summer break.</p>
+            </sp>
+            <view>The <camera type="move">camera moves</camera> to <persName ref="#hank"
+                  >Hank</persName> grilling burgers while <persName ref="#shmipper"
+                  >Shmipper</persName> and <persName ref="#smabble">Smabble</persName> are running
+               around and laughing beside <rs ref="#hank">him</rs>. Others sit at a picnic
+               table.</view>
+            <sp who="#hank">
+               <speaker>Hank</speaker>
+               <p>So <rs ref="#hankWife">you</rs> want cheese on that, <rs ref="#hankWife"
+                  >hon</rs>?</p>
+            </sp>
+            <sp who="#hankWife">
+               <speaker><persName ref="#hank">Hank</persName>'s wife</speaker>
+               <p>Sure, <persName ref="#hank">Hank</persName>.</p>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <p>A time for leisure, recreation, and taking 'er easy...</p>
+            </sp>
+            <view><camera type="cut">Cut</camera> to the <q>"Welcome to <placeName
+                     ref="#gravityFalls">Gravity Falls</placeName>"</q> sign.</view>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <p>Unless you're me.</p>
+            </sp>
+            <stage type="business"><persName ref="#mabel">Mabel</persName> and <persName
+                  ref="#dipper">Dipper</persName> crash through the <q>"Welcome to <placeName
+                     ref="#gravityFalls">Gravity Falls</placeName>"</q> sign with the Mystery Cart,
+               screaming "Aaaah". <rs ref="#mabel #dipper">They</rs> are being chased by an unknown
+                  <persName ref="#monster">monster</persName>, which is knocking down trees.</stage>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <stage type="gesture">(Looks back)</stage>
+               <p><rs ref="#monster">It</rs>'s getting closer!</p>
+            </sp>
+            <stage type="business">The <persName ref="#monster">monster</persName> growls and tries
+               to catch the cart but just falls short. The cart flies off a rock and lands
+               roughly.</stage>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <p>My name is <persName ref="#dipper">Dipper</persName>. The <rs ref="#mabel"
+                     >girl</rs> about to puke is my sister <persName ref="#mabel">Mabel</persName>.
+                     <rs ref="#mabel #dipper">We</rs>'re in a golf cart, fleeing from <rs
+                     ref="#monster">a creature of unimaginable horror</rs>.</p>
+            </sp>
+            <stage type="business">The <persName ref="#monster">monster</persName> throws a tree in
+                  <rs ref="#dipper #mabel">their</rs> path.</stage>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p>Look out!</p>
+            </sp>
+            <view>The <camera type="freeze">image freezes</camera> with <persName ref="#mabel"
+                  >Mabel</persName> and <persName ref="#dipper">Dipper</persName> screaming as <rs
+                  ref="#dipper #mabel">they</rs> run into the screen.</view>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <p>Rest assured, there's a perfectly logical explanation.</p>
+            </sp>
+            <view><camera type="cut">Cut</camera> to <sound>theme song</sound>. <camera type="cut"
+                  >Cut</camera> back to <persName ref="#dipper">Dipper</persName> and <persName
+                  ref="#mabel">Mabel</persName> in the golf cart.</view>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <p>Let's rewind.</p>
+               <view>(<camera type="cut">Cut</camera> to a flashback squence showing <persName
+                     ref="#dipper">Dipper</persName> and <persName ref="#mabel">Mabel</persName> in
+                     <rs ref="#mabel #dipper">their</rs>
+                  <placeName ref="#home">living room at home</placeName>)</view>
+               <p>It all began when <rs ref="#mabel #dipper">our</rs>
+                  <persName ref="#parents">parents</persName> decided <rs ref="#mabel #dipper"
+                     >we</rs> could use some fresh air.</p>
+            </sp>
+            <sp who="#parents">
+               <speaker>Parents</speaker>
+               <stage type="business"><rs ref="#mabel #dipper">Their</rs>
+                  <persName ref="#parents">parents</persName> take <rs ref="#mabel #dipper"
+                     >their</rs> stuff away, give <rs ref="#mabel #dipper">them</rs> bags and put
+                  some sunscreen on <rs ref="#mabel #dipper">their</rs> noses.</stage>
+            </sp>
+            <view><camera type="cut">Cut</camera> to a map of <placeName ref="#oregon"
+                  >Oregon</placeName>. <camera type="zoom">Zoom in</camera> to <placeName
+                  ref="#gravityFalls">Gravity Falls</placeName>.</view>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <stage type="delivery">(Narrating:)</stage>
+               <p><rs ref="#parents">They</rs> shipped <rs ref="#mabel #dipper">us</rs> up north to
+                  a sleepy town called <placeName ref="#gravityFalls">Gravity Falls</placeName>,
+                     <placeName ref="#oregon">Oregon</placeName>, to stay at <rs
+                     ref="#dipper #mabel">our</rs>
+                  <rs ref="#stan">great-uncle</rs>'s place in the woods.</p>
+            </sp>
+            <view><camera type="cut">Cut</camera> to <persName ref="#mabel">Mabel</persName> in the
+                  <placeName ref="#attic">attic</placeName> hanging up posters.</view>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p>This <placeName ref="#attic">attic</placeName> is amazing. Check out all my
+                  splinters!</p>
+               <stage type="gesture">(Holds up hands, which have gigantic splinters sticking out of
+                  them)</stage>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <stage>(Backs up into <rs ref="#dipper">his</rs> bed, which <persName ref="#gompers"
+                     >Gompers</persName> is on; not narrating:)</stage>
+               <p>And there's a <rs ref="#gompers">goat</rs> on my bed.</p>
+            </sp>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p>Hey, <rs ref="#gompers">friend</rs>.</p>
+               <stage type="business">(Holds out <rs ref="#mabel">her</rs> arm, and <persName
+                     ref="#gompers">Gompers</persName> chews on <rs ref="#mabel">her</rs>
+                  sleeve)</stage>
+               <p>Oh! Yes, <rs ref="#gompers">you</rs> can keep chewing on my sweater. <vocal>
+                     <desc>(Laughs)</desc>
+                  </vocal></p>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <stage type="delivery">(Narrating:)</stage>
+               <p><rs ref="#mabel">My sister</rs> tended to look on the bright side of things.</p>
+            </sp>
+            <view><camera type="cut">Cut</camera> to <persName ref="#mabel">Mabel</persName> rolling
+               down a hill of grass.</view>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p>Yay! Grass!</p>
+            </sp>
+            <stage type="setting">A woodpecker pecks on <persName ref="#dipper">Dipper</persName>'s
+               hat.</stage>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <stage type="delivery">(Narrating:)</stage>
+               <p>But I was having a hard time getting used to <rs ref="#dipper #mabel">our</rs> new
+                  surroundings.</p>
+            </sp>
+            <sp who="#stan">
+               <speaker>Stan</speaker>
+               <stage type="entrance">(Jumps out at <rs ref="#dipper">him</rs> wearing a
+                  mask)</stage>
+               <p>Boo!</p>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <stage type="delivery">(Not narrating:)</stage>
+               <p>Ah!</p>
+               <stage type="business">(Falls over)</stage>
+            </sp>
+            <sp who="#stan">
+               <speaker>Stan</speaker>
+               <stage type="gesture">(Takes <rs ref="#stan">his</rs> mask off)</stage>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <stage type="delivery">(Narrating:)</stage>
+               <p>And then there was <rs ref="#dipper #mabel">our</rs>
+                  <persName ref="#stan">Great Uncle Stan</persName>.</p>
+               <stage type="gesture">(As <persName ref="#stan">Stan</persName> slaps <rs ref="#stan"
+                     >his</rs> knee)</stage>
+               <p>That guy.</p>
+            </sp>
+            <sp who="#stan">
+               <speaker>Stan</speaker>
+               <stage type="gesture">(<vocal>
+                     <desc>Coughs</desc>
+                  </vocal> several times and hits <rs ref="#stan">his</rs> chest)</stage>
+               <p>It was worth it.</p>
+            </sp>
+            <view><camera type="cut">Cut</camera> to <persName ref="#stan">Stan</persName> leading
+               tourists through the <placeName ref="#mysteryShack">Mystery Shack</placeName>.</view>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <stage type="delivery">(Narrating:)</stage>
+               <p><rs ref="#dipper #mabel">Our</rs>
+                  <rs ref="#stan">uncle</rs> had transformed <rs ref="#stan">his</rs> house into a
+                  tourist trap <rs ref="#stan">he</rs> called the <placeName ref="#mysteryShack"
+                     >Mystery Shack</placeName>. The real mystery was why anyone came.</p>
+            </sp>
+            <stage type="business">The Jackalope's antler breaks off.</stage>
+            <sp who="#stan">
+               <speaker>Stan</speaker>
+               <p>Ladies and gentlemen, behold! The Sascrotch!</p>
+            </sp>
+            <view><camera type="cut">Cut</camera> to a Sasquatch wearing underwear. Tourists start
+               speaking excitedly, and snap pictures. Cut to <persName ref="#dipper"
+                  >Dipper</persName> sweeping the wooden floor with a broom. <persName ref="#mabel"
+                  >Mabel</persName> is looking at stuff.</view>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <stage type="delivery">(Narrating:)</stage>
+               <p>And guess who had to work <rs ref="#mysteryShack">there</rs>.</p>
+               <stage type="delivery">(Not narrating; sighs)</stage>
+            </sp>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p>Ooh!</p>
+               <stage type="gesture">(Reaches for large eyeball)</stage>
+            </sp>
+            <sp who="#stan">
+               <speaker>Stan</speaker>
+               <stage type="gesture">(Slaps <rs ref="#mabel">her</rs> hand with <rs ref="#stan"
+                     >his</rs> 8-ball cane)</stage>
+               <p>No touching the merchandise!</p>
+            </sp>
+            <view><camera type="cut">Cut</camera> to <persName ref="#soos">Soos</persName> driving
+               the Mystery Cart to the <placeName ref="#mysteryShack">Mystery
+               Shack</placeName>.</view>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <stage type="delivery">(Narrating:)</stage>
+               <p>It looked like it was gonna be the same, boring routine all summer. Until one
+                  fateful day...</p>
+            </sp>
+            <view><camera type="cut">Cut</camera> to <persName ref="#mabel">Mabel</persName> peeking
+               through <persName ref="#stan">Stan</persName>-bobbleheads.</view>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p><rs ref="#norman">He</rs>'s looking at it! <rs ref="#norman">He</rs>'s looking at
+                  it!</p>
+            </sp>
+            <view><camera type="cut">Cut</camera> to a <persName ref="#norman">boy</persName>
+               looking at <persName ref="#mabel">Mabel</persName>'s note.</view>
+            <sp who="#norman">
+               <speaker>Norman</speaker>
+               <p>Uh..</p>
+               <stage type="delivery">(Reading note)</stage>
+               <p>Do <rs ref="#norman">you</rs> like me? Yes? Definitely? Absolutely!!!</p>
+               <stage type="gesture">(Looks around)</stage>
+            </sp>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p>I rigged it!</p>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <stage type="business">(Spraying a jar with water and wiping it;) </stage>
+               <p><persName>Mabel</persName>, I know <rs ref="#mabel">you</rs>'re going through <rs
+                     ref="#mabel">your</rs> whole <q>"Boy Crazy"</q> phase, but I think <rs
+                     ref="#mabel">you</rs>'re kind of overdoing it with the <q>"crazy"</q> part.</p>
+            </sp>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p>What?</p>
+               <stage type="gesture">(Blows raspberry)</stage>
+               <p>Come on, <persName ref="#dipper">Dipper</persName>! This is <rs
+                     ref="#dipper #mabel">our</rs> first summer away from home! It's my big chance
+                  to have an epic summer romance!</p>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <p>Yeah, but do <rs ref="#mabel">you</rs> need to flirt with <hi rend="italic"
+                     >every</hi> guy <rs ref="#mabel">you</rs> meet?</p>
+            </sp>
+            <view><camera type="cut">Cut</camera> to a flashback of <persName ref="#mabel"
+                  >Mabel</persName> with a <persName ref="#boyGreetingCard">boy near a greeting
+                  cards display</persName>.</view>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p>My name is <persName ref="#mabel">Mabel</persName>, but <rs ref="#boyGreetingCard"
+                     >you</rs> can call me <q>"The girl of <rs ref="#boyGreetingCard">your</rs>
+                     dreams."</q> I'm joking!</p>
+               <stage type="business">(Shoves <rs ref="#boyGreetingCard">him</rs> into the
+                  display)</stage>
+            </sp>
+            <view><camera type="cut">Cut</camera> to a flashback of a <persName
+                  ref="#boyTurtleBench">boy holding a turtle on a bench</persName>.</view>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <stage type="business">(Jumps up behind <rs ref="#boyTurtleBench">him</rs>)</stage>
+               <p>Oh my god, <rs ref="#boyTurtleBench">you</rs> like turtles? I like turtles too!
+                  What is happening here?</p>
+            </sp>
+            <view><camera type="cut">Cut</camera>to a flashback set in a <placeName
+                  ref="#mattressStore">mattress store</placeName>.</view>
+            <sp who="#mattressKing">
+               <speaker>Mattress King</speaker>
+               <p>Come one, come all, to the <rs ref="#mattressStore">Mattress Prince's kingdom of
+                     savings</rs>!</p>
+            </sp>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <stage type="entrance">(Hiding behind a set of colorful balloons; pops out
+                  head)</stage>
+               <p>Take me with <rs ref="#mattressKing">you</rs>...</p>
+            </sp>
+            <sp who="#mattressKing">
+               <speaker>Mattress King</speaker>
+               <p>Ah!</p>
+               <stage>(Cowers away from <persName ref="#mabel">Mabel</persName> and drops
+                  scepter)</stage>
+            </sp>
+            <view><camera type="cut">Cut</camera> back to the present.</view>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p>Mock all <rs ref="#dipper">you</rs> want, <rs ref="#dipper">brother</rs>, but I
+                  got a good feeling about this summer. I wouldn't be surprised if the man of my
+                  dreams walked through that door right now.</p>
+            </sp>
+            <sp who="#stan">
+               <speaker>Stan</speaker>
+               <stage type="entrance">(Walks through the door and burps, but it gets caught in <rs
+                     ref="#stan">his</rs> throat)</stage>
+               <p>Oh! Oh, not good. Ow.</p>
+            </sp>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p>Aww! Why!</p>
+            </sp>
+            <sp who="#stan">
+               <speaker>Stan</speaker>
+               <p>All right, all right, look alive, people. I need someone to go hammer up these
+                  signs in the spooky part of the forest.</p>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <stage type="delivery">(Quickly:)</stage>
+               <p>Not it!</p>
+            </sp>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <stage type="delivery">(Quickly:)</stage>
+               <p>Not it!</p>
+            </sp>
+            <sp who="#soos">
+               <speaker>Soos</speaker>
+               <p>Uh, also not it.</p>
+            </sp>
+            <sp who="#stan">
+               <speaker>Stan</speaker>
+               <p>Nobody asked <rs ref="#soos">you</rs>, <persName ref="#soos">Soos</persName>.</p>
+            </sp>
+            <sp who="#soos">
+               <speaker>Soos</speaker>
+               <p>I know, and I'm comfortable with that.</p>
+            </sp>
+            <sp who="#stan">
+               <speaker>Stan</speaker>
+               <p><persName ref="#wendy">Wendy</persName>, I need <rs ref="#wendy">you</rs> to put
+                  up this sign!</p>
+            </sp>
+            <sp who="#wendy">
+               <speaker>Wendy</speaker>
+               <stage type="gesture">(Pretends to reach for signs)</stage>
+               <p>I would, but I, ugh, can't, ugh, reach it, ugh...</p>
+            </sp>
+            <sp who="#stan">
+               <speaker>Stan</speaker>
+               <p>I'd fire all of <rs ref="#wendy #soos #dipper #mabel">you</rs> if I could. All
+                  right, let's make it... eenie, meenie, miney...</p>
+               <stage type="gesture">(Points at <persName ref="#dipper">Dipper</persName>)</stage>
+               <p>you.</p>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <p>Aw, what? <persName ref="#stan">Grunkle Stan</persName>, whenever I'm in those
+                  woods, I feel like I'm being watched.</p>
+            </sp>
+            <sp who="#stan">
+               <speaker>Stan</speaker>
+               <p>Ugh, this again.</p>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <p>I'm telling <rs ref="#stan">you</rs>, something weird is going on in <rs
+                     ref="#gravityFalls">this town</rs>. Just today, my mosquito bites spelled out
+                     <q>"BEWARE."</q></p>
+            </sp>
+            <sp who="#stan">
+               <speaker>Stan</speaker>
+               <stage type="gesture">(Looks at <persName ref="#dipper">Dipper</persName>'s
+                  arm)</stage>
+               <p>That says <q>"BEWARB."</q></p>
+               <stage type="gesture">(<persName ref="#dipper">Dipper</persName> scratches <rs
+                     ref="#dipper">his</rs> arm)</stage>
+               <p>Look, kid. The whole <q>"monsters in the forest"</q> thing is just local legend,
+                  drummed up by guys like me to sell merch to guys like that.</p>
+            </sp>
+            <stage type="setting">A fat, sweaty man <vocal>
+                  <desc>laughs</desc>
+               </vocal> while looking at a <persName ref="#stan">Stan</persName>-bobblehead's head
+               bobble.</stage>
+            <sp who="#stan">
+               <speaker>Stan</speaker>
+               <p>So quit being so paranoid!</p>
+               <stage type="gesture">(Gives <persName ref="#dipper">Dipper</persName> the
+                  signs)</stage>
+            </sp>
+            <view><camera type="cut">Cut</camera> to a foggy forest with trees getting blown by the
+               wind.</view>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <p>Ugh, <persName ref="#stan">Grunkle Stan</persName>. Nobody ever believes anything
+                  I say.</p>
+               <stage type="business">(Puts one sign up on a tree that says <q>"To the <placeName
+                        ref="#mysteryShack">Mystery Shack</placeName>"</q>. <rs ref="#dipper"
+                     >He</rs> starts to hammer a nail on another tree trunk, but it makes a metallic
+                  sound. <rs ref="#dipper">He</rs> taps the tree with the hammer, which makes more
+                  metallic sounds. <rs ref="#dipper">He</rs> wipes away some dust and opens a secret
+                  window revealing a mechanical box with two control switches on top. <rs
+                     ref="#dipper">He</rs> tests one control but nothing happens. Then <rs
+                     ref="#dipper">he</rs> tries the other. Behind <rs ref="#dipper">him</rs>, a
+                  hole opens up in the ground. <persName ref="#gompers">Gompers</persName> bleats
+                  and runs away.)</stage>
+               <p>What the?</p>
+               <stage type="business">(Looks inside the hole, and there is a book. <rs ref="#dipper"
+                     >He</rs> picks the book up and places it on the ground, and checks for people
+                  watching. <rs ref="#dipper">He</rs> flips one page and an eye-glass is in it. <rs
+                     ref="#dipper">He</rs> looks at the eye-glass and puts it down. <rs
+                     ref="#dipper">He</rs> flips another page, and begins reading aloud.)</stage>
+               <p><q>"It's hard to believe it's been six years since I began studying the strange
+                     and wondrous secrets of <placeName ref="#gravityFalls">Gravity
+                        Falls</placeName>, <placeName ref="#oregon">Oregon</placeName>."</q></p>
+               <stage type="gesture">(Flips through pages)</stage>
+               <p>What is all this?</p>
+               <stage type="delivery">(Stops at a page that says <q>"TRUST NO ONE"</q> and starts
+                  reading:)</stage>
+               <p><q>"Unfortunately, my suspicions have been confirmed. I'm being watched. I must
+                     hide this book before he finds it. Remember: in <placeName ref="#gravityFalls"
+                        >Gravity Falls</placeName> there is no one you can trust."</q></p>
+               <stage type="gesture">(Closes Journal)</stage>
+               <p>No one you can trust...</p>
+            </sp>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <stage type="entrance">(Jumps up behind a log)</stage>
+               <p>HELLO!</p>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <p>AH!</p>
+            </sp>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p>What'cha readin', some nerd thing?</p>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <stage type="gesture">(Hides journal behind back)</stage>
+               <p>Uh, uh, it’s nothing!</p>
+            </sp>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <stage type="gesture">(Imitating <persName>Dipper</persName>:)</stage>
+               <p><q>"Uh, uh, it’s nothing!"</q>
+                  <vocal>
+                     <desc>(Laughs)</desc>
+                  </vocal> What? Are <rs ref="#dipper">you</rs> actually not gonna show me?</p>
+            </sp>
+            <sp who="#gompers">
+               <speaker>Gompers</speaker>
+               <stage type="gesture">(Nibbles the edge of the journal)</stage>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <p>Uhhh...</p>
+               <stage type="gesture">(Glances at <persName ref="#gompers"
+                  >Gompers</persName>)</stage>
+               <p>Let's go somewhere private.</p>
+            </sp>
+            <view><camera type="cut">Cut</camera> to a view of the <placeName ref="#mysteryShack"
+                  >Mystery Shack</placeName>. <persName ref="#dipper">Dipper</persName> and
+                  <persName ref="#mabel">Mabel</persName> are in the <placeName ref="#livingRoom"
+                  >living room</placeName>.</view>
+            <sp>
+               <speaker>Dipper</speaker>
+               <p>It's amazing! <persName ref="#stan">Grunkle Stan</persName> said I was being
+                  paranoid, but according to this book, <placeName ref="#gravityFalls">Gravity
+                     Falls</placeName> has this secret dark side.</p>
+               <stage type="gesture">(Shows <persName ref="#mabel">Mabel</persName> a page)</stage>
+            </sp>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p>Whoa! Shut. Up!</p>
+               <stage type="business">(Pushes <persName ref="#dipper">Dipper</persName>)</stage>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <p>And get this! After a certain point, the pages just.. stop, like the guy who was
+                  writing it... mysteriously disappeared.</p>
+               <stage type="setting">(Doorbell rings)</stage>
+               <p>Who's that?</p>
+            </sp>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p>Well, time to spill the beans.</p>
+               <stage type="business">(Knocks over a can of beans on the table)</stage>
+               <p>Boop. Beans. <rs ref="#mabel">This girl</rs>'s got a date! Woot woot!</p>
+               <stage type="business">(Falls backward into the chair)</stage>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <p>Let me get this straight: in the half hour I was gone, <rs ref="#mabel">you</rs>
+                  already found a <rs ref="#norman">boyfriend?</rs></p>
+            </sp>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p>What can I say? I guess I'm just IRRESISTIBLLLLE!</p>
+               <stage type="setting">(Doorbell rings twice)</stage>
+               <p>Oh. Coming!</p>
+               <stage type="exit">(Runs out)</stage>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <stage type="business">(Sits down in chair and begins to read the journal)</stage>
+            </sp>
+            <sp who="#stan">
+               <speaker>Stan</speaker>
+               <stage type="entrance">(Walks in and sees <persName ref="#dipper"
+                  >Dipper</persName>)</stage>
+               <p>What'cha reading there, slick?</p>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <p>Oh!</p>
+               <stage type="business">(Throws the book under the seat cushion and grabs a
+                  magazine)</stage>
+               <p>I was just catching up on, uh...</p>
+               <stage type="delivery">(Sees the cover of the magazine; reading:)</stage>
+               <p><q>Gold Chains For Old Men Magazine</q>?</p>
+            </sp>
+            <sp who="#stan">
+               <speaker>Stan</speaker>
+               <p>That's a good issue.</p>
+            </sp>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <stage type="location">(Standing next to <persName ref="#norman"
+                  >Norman</persName>)</stage>
+               <p>Hey, <rs ref="#dipper #stan">family</rs>! Say hello to my <rs ref="#norman">new
+                     boyfriend</rs>!</p>
+            </sp>
+            <sp who="#norman">
+               <speaker>Norman</speaker>
+               <p>'Sup?</p>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <p>Hey...</p>
+            </sp>
+            <sp who="#stan">
+               <speaker>Stan</speaker>
+               <p>How's it hanging?</p>
+            </sp>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p><rs ref="#mabel #norman">We</rs> met at the cemetery. <rs ref="#norman">He</rs>'s
+                  really deep.</p>
+               <stage type="gesture">(Feels <rs ref="#norman">his</rs> arm)</stage>
+               <p>Oh. Little muscle there. That's...what a surprise...</p>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <p>So, what's <rs ref="#norman">your</rs> name?</p>
+            </sp>
+            <sp who="#norman">
+               <speaker>Norman</speaker>
+               <p>Uh. Normal... MAN!</p>
+            </sp>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p><rs ref="#norman">He</rs> means <persName ref="#norman">Norman</persName>.</p>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <p>Are <rs ref="#norman">you</rs> bleeding, <persName ref="#norman"
+                  >Norman</persName>?</p>
+            </sp>
+            <sp who="#norman">
+               <speaker>Norman</speaker>
+               <stage type="modifier">(With a red liquid dripping down <rs ref="#norman">his</rs>
+                  face)</stage>
+               <p>It's jam.</p>
+            </sp>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p>I love jam! Look. At. This!</p>
+            </sp>
+            <sp who="#norman">
+               <speaker>Norman</speaker>
+               <p>So, <rs ref="#mabel">you</rs> wanna go hold hands or... whatever?</p>
+            </sp>
+            <sp who="#mabel">
+               <speaker>Mabel</speaker>
+               <p>Oh, oh, my goodness. <vocal>
+                     <desc>(Giggles)</desc>
+                  </vocal> Don't wait up!</p>
+               <stage type="exit">(Runs out)</stage>
+            </sp>
+            <sp who="#norman">
+               <speaker>Norman</speaker>
+               <stage type="exit">(Points at <persName ref="#stan">Stan</persName> and <persName
+                     ref="#dipper">Dipper</persName> and runs into the wall several times on <rs
+                     ref="#norman">his</rs> way out)</stage>
+            </sp>
+            <sp who="#dipper">
+               <speaker>Dipper</speaker>
+               <stage type="delivery">(Narrating:)</stage>
+               <p>There was something about <persName ref="#norman">Norman</persName> that wasn't
+                  right.</p>
+            </sp>
+         </div>
+      </body>
+   </text>
+</TEI>
