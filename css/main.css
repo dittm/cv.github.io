@@ -6,6 +6,7 @@
 
 .navbar-brand {
     padding-left: 10px;
+    color: gainsboro;
 }
 
 .nav-link, .nav-link:hover, a:hover {
@@ -31,10 +32,6 @@ body {
 
 .row {
     padding-top: 20px;
-}
-
-a {
- color: gainsboro;
 }
 
 h2 {
