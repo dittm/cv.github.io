@@ -4,5 +4,18 @@
 
 ## purpose
 
-this website is a personal portfolio showcasting current and post projects during my masters in digital humanities at the university of graz.
+this website is a personal portfolio showcasting current and past projects during my masters in digital humanities at the university of graz.
 
+### relevant courses taken
+* Introduction to Programming
+* Introduction to IT
+* Introduction to the Digital Humanities
+* X-Technologie
+* Information Modelling
+            
+### current courses
+* Advanced Programming
+* Selected Questions of Digital Humanities
+* Web Development
+* Advanced X-Technologies
+* Advanced Information Modelling
