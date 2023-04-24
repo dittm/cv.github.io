@@ -1,7 +1,7 @@
 /****** Navi ******/
 
 .navbar-custom {
-	background-color: #393E46;
+	background-color: #1b1d20;
 }
 
 .navbar-brand {
@@ -62,14 +62,14 @@ ul {
 }
 
 .logos {
-    background-color: #393E46;
+    background-color: #1b1d20;
 }
    
 #skills {
     text-align: center;
     padding-top: 20px;
     margin-top: 50px;
-    background-color: #393E46;
+    background-color: #1b1d20;
 }
 
 #c-courses {
@@ -80,7 +80,7 @@ ul {
 
 .accordion-button, .accordion-button:not(.collapsed) {
     color: gainsboro;
-    background-color: #393E46;;
+    background-color: #1b1d20;;
 }
 
 .accordion-body {
@@ -95,5 +95,5 @@ ul {
 /****** Footer ******/
 
 .page-footer {
-    background-color:#393E46;
+    background-color:#1b1d20;
 }
