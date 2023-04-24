@@ -1,3 +1,5 @@
+/****** Navi ******/
+
 .navbar-custom {
 	background-color: #393E46;
 }
@@ -10,17 +12,11 @@
     color: #a6caff
 }
 
-a {
- color: gainsboro;
+.navbar-toggler-icon {
+    border: 1px solid gainsboro;
 }
 
-/* a:active {
-    color:silver;
-} */
-
-.carousel {
-    padding: 20px;
-}
+/****** Body, etc. ******/
 
 body {
     background-color: #222831;
@@ -28,23 +24,22 @@ body {
     font-size: 20px;
 }
 
-.card-body {
-    background-color: #222831;
-}
-
 .container {
     padding-top: 70px;
     text-align: justify;
-   }
+}
 
+.row {
+    padding-top: 20px;
+}
 
-  
-  /* all.min.css | https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css */
-  
-.fa-brands, .fab {
-    font-size: xx-large;
-    padding: 10px;
-  }
+a {
+ color: gainsboro;
+}
+
+h2 {
+    text-align: center;
+}
 
 dl,
 ol,
@@ -54,24 +49,34 @@ ul {
  text-align: left;
 }
 
-.logos {
-    /* margin-top: 10px;
-    margin-right: 35px;
-    margin-bottom: 165px; */
-    background-color: #393E46;
+.carousel {
+    padding: 20px;
 }
 
-.navbar-toggler-icon {
-    border: 1px solid gainsboro;
-   }
-   
-.skills {
-    text-align: center;
+.card-body {
+    background-color: #222831;
 }
 
 .fa-regular, .fa-solid {
     font-size: xx-large;
 }
+
+.logos {
+    background-color: #393E46;
+}
+   
+#skills {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 50px;
+    background-color: #393E46;
+}
+
+#c-courses {
+    padding-bottom: 70px;
+}
+
+/****** Accordion ******/
 
 .accordion-button, .accordion-button:not(.collapsed) {
     color: gainsboro;
@@ -87,15 +92,8 @@ ul {
     color: #222831;
 }
    
-h2 {
-    text-align: center;
-}
+/****** Footer ******/
 
-.skills {
-    padding-top: 20px;
-    margin-top: 50px;
-}
-
-.container {
-    padding-top: 70px;
+.page-footer {
+    background-color:#393E46;
 }
