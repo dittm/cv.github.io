@@ -9,7 +9,7 @@
     color: gainsboro;
 }
 
-.nav-link, .nav-link:hover, a:hover {
+.nav-link, .nav-link:hover, a:hover, a {
     color: #a6caff
 }
 
