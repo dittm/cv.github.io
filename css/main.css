@@ -1,16 +1,20 @@
+:root {
+    --blue: #97B0BA;
+  }
+
+
 /****** Navi ******/
 
 .navbar-custom {
-	background-color: #393E46;
+	background-color: var(--blue);
 }
 
 .navbar-brand {
     padding-left: 10px;
-    color: gainsboro;
 }
 
 .nav-link, .nav-link:hover, a:hover, a {
-    color: #a6caff
+    color: #1b1d20;
 }
 
 .navbar-toggler-icon {
@@ -20,8 +24,8 @@
 /****** Body, etc. ******/
 
 body {
-    background-color: #1b1d20;
-    color: gainsboro;
+    /* background-color: #393E46; */
+    color: #1b1d20;
     font-size: 20px;
 }
 
@@ -94,3 +98,31 @@ ul {
 .page-footer {
     background-color:#393E46;
 }
+
+
+/******* slideshow ********/
+
+.carousel-inner {
+    display: flex;
+  }
+  
+  .carousel-item {
+    transition: transform 0.6s ease;
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+    width: 5%;
+    color: #000;
+  }
+  
+  .carousel-indicators {
+    position: static;
+    margin-top: 20px;
+  }
+  
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: #fff;
+  }
+  
