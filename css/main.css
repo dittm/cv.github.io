@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-    padding-top: 70px;
+    /* padding-top: 70px; */
     text-align: justify;
 }
 
@@ -54,11 +54,11 @@ ul {
     padding: 20px;
 }
 
-.card-body {
+/* .card-body {
     background-color: #1b1d20;
-}
+} */
 
-.fa-regular, .fa-solid {
+.fa-regular, .fa-solid, .fa-brands {
     font-size: xx-large;
 }
 
@@ -69,8 +69,8 @@ ul {
 #skills {
     text-align: center;
     padding-top: 20px;
-    margin-top: 50px;
-    background-color: #393E46;
+    /* margin-top: 50px; */
+    background-color: var(--blue);
 }
 
 #c-courses {
@@ -79,7 +79,7 @@ ul {
 
 /****** Accordion ******/
 
-.accordion-button, .accordion-button:not(.collapsed) {
+/* .accordion-button, .accordion-button:not(.collapsed) {
     color: gainsboro;
     background-color: #393E46;;
 }
@@ -91,12 +91,12 @@ ul {
 
 .accordion-body > p > a, li > a, li > a:hover {
     color: #1b1d20;
-}
+} */
    
 /****** Footer ******/
 
 .page-footer {
-    background-color:#393E46;
+    background-color: var(--blue);
 }
 
 

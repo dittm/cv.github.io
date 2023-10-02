@@ -26,12 +26,6 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#projects">Projects</a>
 					</li>
-					<!-- <li class="nav-item">
-						<a class="nav-link" href="#link.2">CV</a>
-					</li> -->
-					<li class="nav-item">
-						<a class="nav-link" href="#courses">Courses taken</a>
-					</li>
 				</ul>
 			</div>
 		</nav>
@@ -45,20 +39,8 @@
 						  <div class="carousel-item active">
 							<img src="images/ring.jpg" class="d-block" width="60%" alt="Meme about NFTs">
 						  </div>
-						  <!-- <div class="carousel-item">
-							<img src="foto.jpg" class="d-block w-100" alt="...">
-						  </div>
-						  <div class="carousel-item">
-							<img src="foto.jpg" class="d-block w-100" alt="...">
-						  </div> -->
 						</div>
 					  </div>
-					<!-- <div class="col logos">
-						<div><i class="fa-brands fa-twitter"></i></div>
-						<i class="fa-regular fa-envelope"></i>
-						<div><i class="fa-brands fa-slack"></i></div>
-						<button type="button" class="btn btn-outline-light">CV</button>
-					</div> -->
 				</div>
 			</div>
 			
@@ -66,16 +48,17 @@
 				<h2>Biography</h2>
 				<p>Christina Dittmann is a Digital Humanities student at the University of Graz.</p>
 				<p>She holds a Bachelor's degree in English Studies and Sociology from Heidelberg University. Her thesis topic was “The beauty faded out of the canvas”: The Role of Art in the Downfall of Jack London’s <em>Martin Eden</em>" (grade: 1,3).</p>
+
+				<div class="container"id="skills">
+					<div class="row">
+					  <div class="col"><i class="fa-brands fa-github"></i><p>Github</p></div>
+					  <div class="col"><i class="fa-brands fa-linkedin"></i><p>LinkedIn</p></div>
+					  <div class="col"><i class="fa-solid fa-list"></i><p>CV</p></div>
+					</div>
+				</div>
 			</div>
-		</div>
+		
 
-		<div class="col">
-			<i class="fa-brands fa-square-github"></i>Github</div>
-			<i class="fa-brands fa-linkedin">LinkedIn</i>
-			<i class="fa-solid fa-file">CV</i>
-		</div>
-
-		<div class="container">
 			<h2>Skills</h2>
 			<div class="container" id="skills">
 				<div class="row">
@@ -84,225 +67,63 @@
 				  <div class="col"><i class="fa-solid fa-code-branch"></i><p>Data Analysis</p><p>Python (pandas, numpy, matplotlib), SQL</p></div>
 				  <div class="col"><i class="fa-solid fa-chart-line"></i><p>Databases</p><p>PostgreSQL, SQLite</p></div>
 				</div>
-		</div>
-	</div>
-			
-		<!-- <div class="container" style="margin-bottom: 50px;">
-			<h2>Current projects</h2>
-			<div class="container" id="skills">
-				<div class="row">
-				  <div class="col"><p>Machine Learning</p></p><p><a href="projects/spaceship-titanic.ipynb">Here you can find my latest project (Machine Learning)</a></p></div>
-				  <div class="col"><p>Topic Modelling</p><p><a href="projects/topic_modelling.ipynb">Here you can find my latest project (Topic Modelling)</a></p></div>
-				  <div class="col"><p>Django Project</p><p><a target="_blank" href="https://github.com/dittm/pride-prejudice">Here you can find my latest project (Django Project)</a></p></div>
-				</div>
-		</div>
-	</div> -->
-		<!--
-
-		<div class="container" id="projects">
-			<h2>DH Projects</h2>
-			<div class="row">
-					<h4>Student projects</h4>
-					<p>These projects were executed as part of the Digital Humanities Program at the University of Graz</p>
-					<div class="accordion" id="accordionExample">
-						<div class="accordion-item">
-						  <h2 class="accordion-header" id="headingOne">
-							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							  SQL (Information Modelling)
-							</button>
-						  </h2>
-						  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								<p>I modeled a list of the top 50 best films of the genre film noir. The list I based my model on stems from the publisher <em>Taschen</em>, which published a book describing various themes and motifs of film noir. The original list served to introduce film noir as a cinematic genre by compiling its most influential films. The purpose of the database was to analyze the distribution of aspects like the country in which the film was created or how many movies were created outside of the United States. In brief, this project aimed at analyzing the diversity and complexity of <em>Taschen</em>’s canon.</p>
-								<p><a href="projects/final_dittmann.pdf" target="_blank">Project Essay</a></p>
-								<p><a href="projects/sql_dump.sql" target="_blank">SQL Dump</a></p>
-							</div>
-						  </div>
-						</div>
-						<div class="accordion-item">
-						  <h2 class="accordion-header" id="headingTwo">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							  XML/TEI (X-Technologies)
-							</button>
-						  </h2>
-						  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-							  <p>I encoded an episode of a cartoon called "Gravity Falls" according to TEI. The encoded text is based on the automated transcript function on Youtube and a <a href="https://gravityfalls.fandom.com/wiki/Tourist_Trapped/Transcript" title="link to fan-made transcript"> fan-made transcript</a>. In my encoding, I treated the text as a performance text (TEI Module 7) and thus used elements like &lt;sp&gt;, &lt;speaker&gt;, &lt;p&gt;, &lt;view&gt;, &lt;camera&gt; and &lt;stage&gt;.</p>
-							  <p><a href="projects/gravityFalls.xml" target="_blank">TEI encoding</a></p>
-							</div>
-						  </div>
-						</div>
-						<div class="accordion-item">
-						  <h2 class="accordion-header" id="headingThree">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-							   Python (Introduction to Programming)
-							</button>
-						  </h2>
-						  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-							  <p>I worked with a dataset provided by Princeton's "Shakespeare and Company Project." The project deals with Sylvia Beach's bookstore "Shakespeare and Company" founded in Paris in 1919. The still-existent lending library records were digitized by Princeton as CSV files. The dataset itself consists of information about 6,020 books and other items in fields like book URL, title, author, borrow count, and purchase count. My aim is to answer questions such as<br>
-								What are the top 20 most borrowed books?<br>
-								What is the range of the publication years?<br>
-								How many books does the dataset include?</p>
-							</div>
-						  </div>
-						</div>
-				</div>
 			</div>
-				<div class="row">
-					<h4>Work projects</h4>
-					<p>These projects were executed as part of my work at the online editorial team at the university library of Heidelberg</p>
-					<div class="accordion" id="accordionExample">
-						<div class="accordion-item">
-						  <h2 class="accordion-header" id="headingOne">
-							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							  Web Development & CMS
-							</button>
-						  </h2>
-						  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								<p>I participated in the implementation of the following projects:</p>
-								<p>(typo3)
-									<ul>
-										<li><a href="https://www.fid4sa.de/"  target="_blank" title="link to the FID4SA website">FID4SA</a></li>
-										<li><a href="https://www.arthistoricum.net/" target="_blank" title="link to the arthistoricum website">arthistoricum.net</a></li>
-										<li><a href="https://www.propylaeum.de/" target="_blank" title="link to the propylaeum website">propylaeum</a></li>
-									</ul>
-								</p>
-							  	<p>(HTML, CSS, Bootstrap)
-									<ul>
-										<li><a href="https://digi.ub.uni-heidelberg.de/de/bpd/index.html" target="_blank" title="link to the website of 'Bibliotheca Palatina – digital'">Bibliotheca Palatina – digital</a></li> 
-										<li><a href="https://digi.ub.uni-heidelberg.de/de/iwd/index.html" target="_blank" title="link to the website of 'Iwein – digital'">Iwein – digital</a></li>
-										<li><a href="https://digi.ub.uni-heidelberg.de/de/ahd/index.html" target="_blank" title="link to the website of 'Der arme Heinrich – digital'">Der arme Heinrich – digital</a></li>
-									</ul>
-								</p>
-							  	<p>(Drupal - currently in progress)
-									<ul>
-										<li><a href="https://www.ub.uni-heidelberg.de/" target="_blank" title="link to the website of the Heidelberg university library">Heidelberg university library</a></li>
-										<li><a href="https://data.uni-heidelberg.de/" target="_blank" title="link to the website of the Competence Center for Research Data">Competence Center for Research Data</a></li>
-									</ul>
-								</p>
-							</div>
-						  </div>
-						</div>
-						<div class="accordion-item">
-						  <h2 class="accordion-header" id="headingTwo">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							  Design
-							</button>
-						  </h2>
-						  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-							  <p>https://www.ub.uni-heidelberg.de/helios/fachinfo/www/kunst/digilit/artjournals/dt_zs.html</p>
-							  <p>https://journals.ub.uni-heidelberg.de/index.php/conserva/index</p>
-							</div>
-						  </div>
-						</div>
-						<div class="accordion-item">
-						  <h2 class="accordion-header" id="headingThree">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-							   Open Access Publishing
-							</button>
-						  </h2>
-						  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								<p>https://journals.ub.uni-heidelberg.de/index.php/</p>
-							</div>
-						  </div>
-						</div>
-					  </div>
-				</div>
-			</div>
-		<div class="container" id="courses">
-			<div class="row">
-				<h2>Relevant courses taken</h2>
-				<ul>
-					<li>Introduction to Programming</li>
-					<li>Introduction to IT</li>
-					<li>Introduction to the Digital Humanities</li>
-					<li>X-Technologies</li>
-					<li>Information Modelling</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="container" id="c-courses">
-			<div class="row">
-				<h2>Current courses</h2>
-				<ul>
-					<li>Advanced Programming</li>
-					<li>Selected Questions of Digital Humanities</li>
-					<li>Web Development</li>
-					<li>Advanced X-Technologies</li>
-					<li>Advanced Information Modelling</li>
-				</ul>
-			</div>
-		</div>
-		</div> -->
-
-
-
-		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-			<div class="carousel-inner">
-			  <div class="carousel-item active">
-				<div class="row">
-				  <div class="col-md-6">
-					<img src="images/ring.jpg" class="d-block w-100" alt="Image 1">
+		
+			<h2>Web Development</h2>
+			<div class="row row-cols-1 row-cols-md-2 g-4">
+				<div class="col">
+				  <div class="card">
+					<img src="images/screenshot_hofmannsthal.png" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title">Hofmannsthal Digital Edition</h5>
+					  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
 				  </div>
-				  <div class="col-md-6">
-					<div class="carousel-caption d-none d-md-block">
-					  <h5>Slide 1</h5>
-					  <p>Your text content for slide 1 goes here.</p>
+				</div>
+				<div class="col">
+				  <div class="card">
+					<img src="images/screenshot_band.png" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title">Band Page</h5>
+					  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+				  </div>
+				</div>
+				<div class="col">
+				  <div class="card">
+					<img src="images/screenshot_goodreads.png" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title">Blog</h5>
+					  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+					</div>
+				  </div>
+				</div>
+				<div class="col">
+				  <div class="card">
+					<img src="images/screenshot_goodreads.png" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <h5 class="card-title">Goodreads Clone</h5>
+					  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 					</div>
 				  </div>
 				</div>
 			  </div>
-			  <div class="carousel-item">
-				<div class="row">
-				  <div class="col-md-6">
-					<img src="images/ring.jpg" class="d-block w-100" alt="Image 2">
-				  </div>
-				  <div class="col-md-6">
-					<div class="carousel-caption d-none d-md-block">
-					  <h5>Slide 2</h5>
-					  <p>Your text content for slide 2 goes here.</p>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			  <div class="carousel-item">
-				<div class="row">
-				  <div class="col-md-6">
-					<img src="." class="d-block w-100" alt="Image 3">
-				  </div>
-				  <div class="col-md-6">
-					<div class="carousel-caption d-none d-md-block">
-					  <h5>Slide 3</h5>
-					  <p>Your text content for slide 3 goes here.</p>
-					</div>
-				  </div>
-				</div>
-			  </div>
-			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			  <span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			  <span class="visually-hidden">Next</span>
-			</button>
-		  </div>
-		  
+
 
 
 
 		</div>
+
+		</div>
+
+
 		<footer class="container-fluid page-footer">
 		<div class="footer-copyright text-center py-3">© 2023 Copyright:
 			<a>Christina Dittmann</a>
 		</div>
 		</footer>
+
+		
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 	</body>
 </html>
